@@ -21,7 +21,8 @@
 ## 📌 Overview
 
 This project focuses on **extracting, storing, and analyzing YouTube
-data** using the **YouTube Data API v3**.\
+data** using the **YouTube Data API v3**.
+
 The data (Channels, Playlists, Videos, Comments) is stored in a **MySQL
 database** and analyzed through an **interactive Streamlit dashboard**
 for insights.
@@ -30,14 +31,15 @@ for insights.
 
 ## 🎯 Motivation
 
-YouTube generates a massive volume of unstructured data every second.\
+YouTube generates a massive volume of unstructured data every second.
 Manually collecting and analyzing this data is time-consuming and
-inefficient.\
+inefficient.
+
 This project automates the process to:
 
--   Collect structured YouTube data.\
--   Store it centrally in a MySQL database.\
--   Provide easy querying and visualization through a dashboard.\
+-   Collect structured YouTube data.
+-   Store it centrally in a MySQL database.
+-   Provide easy querying and visualization through a dashboard.
 -   Help content creators, marketers, and analysts make informed
     decisions.
 
@@ -45,10 +47,10 @@ This project automates the process to:
 
 ## 🚀 Goals
 
--   Automate YouTube data collection via API.\
--   Store channel, video, playlist, and comment data in MySQL.\
--   Build an interactive Streamlit dashboard for queries & insights.\
--   Answer analytical questions with visualizations.\
+-   Automate YouTube data collection via API.
+-   Store channel, video, playlist, and comment data in MySQL.
+-   Build an interactive Streamlit dashboard for queries & insights.
+-   Answer analytical questions with visualizations.
 -   Provide business and marketing insights from YouTube data.
 
 ------------------------------------------------------------------------
@@ -79,17 +81,23 @@ This project automates the process to:
 ## ✨ Features
 
 -   📊 **Data Extraction** --- Channel, Video, Playlist, Comment
-    details.\
+    details.
+    
 -   💾 **MySQL Storage** --- Centralized structured storage of YouTube
-    data.\
+    data.
+    
 -   📈 **Interactive Dashboard** --- Built using Streamlit with
-    navigation tabs.\
+    navigation tabs.
+    
 -   🎨 **Visualizations**:
-    -   Bar Charts (Top Videos by Views/Likes/Comments)\
-    -   Countplots (No. of Videos, Published per Month)\
-    -   Scatterplots (Views vs Comments)\
-    -   Line Charts (Monthly Trends)\
--   🧩 **Query Section** --- 10 analytical questions with charts.\
+-   
+    -   Bar Charts (Top Videos by Views/Likes/Comments)
+    -   Countplots (No. of Videos, Published per Month)
+    -   Scatterplots (Views vs Comments)
+    -   Line Charts (Monthly Trends)
+    -   
+-   🧩 **Query Section** --- 10 analytical questions with charts.
+-   
 -   🗂 **Data Retrieval** --- View stored channel, video, playlist, and
     comment tables.
 
@@ -129,7 +137,7 @@ This project automates the process to:
 3.  Set up **MySQL Database**:
 
     ``` sql
-    CREATE DATABASE youtube;
+    CREATE DATABASE Youtube;
     ```
 
 4.  Update **DB credentials** in the Python script.
@@ -137,48 +145,49 @@ This project automates the process to:
 5.  Run the Streamlit App:
 
     ``` bash
-    streamlit run app.py
+    streamlit run <file_name>.py
     ```
 
 ------------------------------------------------------------------------
 
 ## 💡 Usage
 
--   Enter **Channel ID** in the Streamlit app to fetch and store data.\
--   Explore tables: Channel, Playlist, Video, Comment.\
--   Run predefined **queries** to answer business questions.\
+-   Enter **Channel ID** in the Streamlit app to fetch and store data.
+-   Explore tables: Channel, Playlist, Video, Comment.
+-   Run predefined **queries** to answer business questions.
 -   Visualize results using charts & plots.
 
-**Sample Analytical Questions Answered:**\
-1. What are the video names with corresponding channels?\
-2. Which channel has the most videos?\
-3. What are the top 10 most viewed videos?\
-4. How many comments per video?\
-5. Which videos were published in 2022?\
-6. What is the average video duration per channel?\
-7. Which videos have the highest likes?\
-8. What are the total views per channel?\
-9. Which videos are above average views?\
+**Sample Analytical Questions Answered:**
+
+1. What are the video names with corresponding channels?
+2. Which channel has the most videos?
+3. What are the top 10 most viewed videos?
+4. How many comments per video?
+5. Which videos were published in 2022?
+6. What is the average video duration per channel?
+7. Which videos have the highest likes?
+8. What are the total views per channel?
+9. Which videos are above average views?
 10. Which videos have the highest comments?
 
 ------------------------------------------------------------------------
 
 ## 📈 Results
 
--   Automated extraction of YouTube data.\
--   Stored data in **MySQL database** for structured access.\
--   Built a **Streamlit dashboard** for querying & visualization.\
+-   Automated extraction of YouTube data.
+-   Stored data in **MySQL database** for structured access.
+-   Built a **Streamlit dashboard** for querying & visualization.
 -   Provided insights on channel growth, engagement, and content
-    performance.\
+    performance.
 -   Scalable solution for content creators & businesses.
 
 ------------------------------------------------------------------------
 
 ## 🔮 Future Work
 
--   📝 Add **sentiment analysis** for comments.\
--   ☁️ Deploy dashboard to cloud (AWS/Heroku).\
--   🔄 Enable real-time data streaming.\
+-   📝 Add **sentiment analysis** for comments.
+-   ☁️ Deploy dashboard to cloud (AWS/Heroku).
+-   🔄 Enable real-time data streaming.
 -   📊 Migrate to **NoSQL (MongoDB)** for large-scale data.
 
 ------------------------------------------------------------------------
